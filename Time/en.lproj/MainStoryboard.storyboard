@@ -7,9 +7,9 @@
         <!--View Controller-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmR-zq-GXa">
@@ -86,7 +86,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2:11pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHv-8k-ei8">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="117" id="pq7-4h-rdj"/>
+                                    <constraint firstAttribute="width" constant="147" id="uhm-LX-BVR"/>
                                     <constraint firstAttribute="height" constant="40" id="vtE-vG-pDA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
@@ -113,26 +113,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FTF-oX-Pm2" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="29" id="0K0-IS-Yh3"/>
-                            <constraint firstItem="Ivn-xL-kuj" firstAttribute="top" secondItem="3" secondAttribute="top" constant="10" id="0tz-r6-WdY"/>
                             <constraint firstAttribute="bottom" secondItem="qmR-zq-GXa" secondAttribute="bottom" constant="22" id="75k-Bk-dGV"/>
                             <constraint firstItem="mkf-JQ-hVQ" firstAttribute="leading" secondItem="hr7-wu-f0v" secondAttribute="leading" type="default" id="A6D-CJ-rmq"/>
                             <constraint firstAttribute="trailing" secondItem="u0b-7W-WfP" secondAttribute="trailing" constant="15" id="Axt-gF-sG0"/>
+                            <constraint firstItem="hr7-wu-f0v" firstAttribute="top" secondItem="Ivn-xL-kuj" secondAttribute="top" type="default" id="Aye-IH-8dt"/>
                             <constraint firstItem="Yr1-2t-oJG" firstAttribute="baseline" secondItem="qmR-zq-GXa" secondAttribute="baseline" type="default" id="E1K-Bn-k9j"/>
                             <constraint firstItem="u0b-7W-WfP" firstAttribute="top" secondItem="3" secondAttribute="top" constant="197" id="G3H-os-vsE"/>
                             <constraint firstItem="ZHv-8k-ei8" firstAttribute="centerX" secondItem="mkf-JQ-hVQ" secondAttribute="centerX" type="default" id="Mut-Ji-Xy3"/>
                             <constraint firstAttribute="bottom" secondItem="89d-mq-WMg" secondAttribute="bottom" constant="13" id="PF7-bz-inP"/>
                             <constraint firstItem="Ivn-xL-kuj" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="123" id="S0D-px-IIJ"/>
-                            <constraint firstItem="mkf-JQ-hVQ" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="SwY-hc-vC3"/>
                             <constraint firstAttribute="bottom" secondItem="ZHv-8k-ei8" secondAttribute="bottom" constant="35" id="UA6-1a-tAw"/>
-                            <constraint firstItem="FTF-oX-Pm2" firstAttribute="leading" secondItem="qmR-zq-GXa" secondAttribute="leading" type="default" id="UB9-5X-Lvy"/>
                             <constraint firstAttribute="trailing" secondItem="Yr1-2t-oJG" secondAttribute="trailing" constant="28" id="Wqo-OC-ye7"/>
-                            <constraint firstItem="hr7-wu-f0v" firstAttribute="top" secondItem="3" secondAttribute="top" constant="9" id="ZHK-2e-iBR"/>
                             <constraint firstAttribute="bottom" secondItem="mkf-JQ-hVQ" secondAttribute="bottom" constant="244" id="csd-V0-k6U"/>
+                            <constraint firstItem="ZHv-8k-ei8" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="hlL-zX-GZ5"/>
+                            <constraint firstItem="FTF-oX-Pm2" firstAttribute="leading" secondItem="qmR-zq-GXa" secondAttribute="leading" type="default" id="nke-wk-Bur"/>
+                            <constraint firstItem="FTF-oX-Pm2" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="29" id="qhk-1K-58B"/>
                             <constraint firstItem="FTF-oX-Pm2" firstAttribute="top" secondItem="3" secondAttribute="top" constant="161" id="r3a-wo-GeW"/>
+                            <constraint firstItem="hr7-wu-f0v" firstAttribute="top" secondItem="3" secondAttribute="top" constant="25" id="w5J-T5-veY"/>
                             <constraint firstItem="ZHv-8k-ei8" firstAttribute="centerX" secondItem="89d-mq-WMg" secondAttribute="centerX" type="default" id="wBS-Wt-Hua"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="AmPm" destination="u0b-7W-WfP" id="uz0-Wc-qOF"/>
                         <outlet property="alarmTimeLabel" destination="Ivn-xL-kuj" id="NYp-nM-pCd"/>
@@ -153,7 +154,7 @@
             <objects>
                 <viewController id="KwE-tY-aTz" customClass="WorldClockViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bbW-j6-41l">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbw-Fh-OuZ">
@@ -224,9 +225,14 @@
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="buttonWorld:"/>
+                <relationship kind="action" name="returned:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="outlet" name="AmPm" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="alarmTimeLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="buttonClock" candidateClass="UIButton"/>
