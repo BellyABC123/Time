@@ -109,6 +109,8 @@
 -(IBAction)returned:(UIStoryboardSegue *)segue {
     checkTime = [NSTimer scheduledTimerWithTimeInterval: 1 target: self selector: @selector(setTime) userInfo: nil repeats: YES];
     NSLog(@"%@", NSStringFromCGRect(alarmTimeLabel.frame));
+    self.wantsFullScreenLayout = YES;
+
 }
 
 -(IBAction)buttonWorld:(id)sender{
@@ -118,35 +120,40 @@
 }
 
 -(IBAction)Timer{
-
     
-    if ([UIApplication sharedApplication].statusBarHidden){
-        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
-        
-        [self isFullscreen:0];
-    }else{
-        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
-        NSLog(@"Going Fullscreen....");
-        [self isFullscreen:1];
+    if ([self fullscreen]== 1) {
+        [self setFullscreen:0];
+    }else if ([self fullscreen]== 0){
+        [self setFullscreen:1];
+    }
+}
 
+-(int)fullscreen{
+    int a;
+    if ([UIApplication sharedApplication].statusBarHidden == YES){
+        a = 1;
+        return a;
+    }else{
+        a = 0;
+        return a;
     }
 }
 
 
-
--(void)isFullscreen:(int)test{
+-(void)setFullscreen:(int)x{
   
     
-    if (test == 1) {
-        
+    if (x == 1) {
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
         //the minus twenty is when the app goes full screen becuase of the
-        CGRect endFrame = CGRectMake(123, -17, 93, 21);
+        CGRect endFrame = CGRectMake(123, 0, 93, 21);
         [UIView animateWithDuration:0.6 animations:^{ alarmTimeLabel.frame = endFrame;}];
         NSLog(@"Fullscreen!: Moving Objects....");
 
-    }else if(test == 0){
+    }else if(x == 0){
         //set the objects to their original place
-        CGRect endFrame = CGRectMake(123, 10, 93, 21);
+        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
+        CGRect endFrame = CGRectMake(123, 25, 93, 21);
         [UIView animateWithDuration:0.6 animations:^{ alarmTimeLabel.frame = endFrame;}];
         NSLog(@"Not Fullscreen!: Moving Ojects...");
     }
@@ -165,6 +172,8 @@
 
 - (void)didReceiveMemoryWarning
 {
+    checkTime = [NSTimer scheduledTimerWithTimeInterval: 1 target: self selector: @selector(setTime) userInfo: nil repeats: YES];
+
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
