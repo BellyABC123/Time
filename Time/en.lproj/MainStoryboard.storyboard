@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmR-zq-GXa">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="aWG-0p-UTD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Timer">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Timer" destination="2" eventType="touchUpInside" id="pYi-hj-TBS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr1-2t-oJG">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="HPu-Nm-MgJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="World">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonWorld:" destination="2" eventType="touchUpInside" id="hc2-fO-1c6"/>
+                                    <segue destination="KwE-tY-aTz" kind="modal" id="KtE-tq-Caw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-wu-f0v">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="FRa-pI-4fs"/>
+                                    <constraint firstAttribute="width" constant="27" id="S6d-Ts-EV0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTF-oX-Pm2">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="1Th-DE-lHB"/>
+                                    <constraint firstAttribute="height" constant="85" id="EHu-Rc-13V"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="09:41">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="84" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.52999997138977051"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ADELAIDE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkf-JQ-hVQ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="Juz-N2-81g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="05:58 am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivn-xL-kuj">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="lO1-Fy-Edy"/>
+                                    <constraint firstAttribute="height" constant="25" id="pbp-ck-Mcw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2:11pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHv-8k-ei8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="pq7-4h-rdj"/>
+                                    <constraint firstAttribute="height" constant="40" id="vtE-vG-pDA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="NEW YORK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89d-mq-WMg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="JEe-XA-8Is"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0b-7W-WfP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="7hd-sa-NuP"/>
+                                    <constraint firstAttribute="height" constant="33" id="u18-mO-Yvd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FTF-oX-Pm2" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="29" id="0K0-IS-Yh3"/>
+                            <constraint firstItem="Ivn-xL-kuj" firstAttribute="top" secondItem="3" secondAttribute="top" constant="10" id="0tz-r6-WdY"/>
+                            <constraint firstAttribute="bottom" secondItem="qmR-zq-GXa" secondAttribute="bottom" constant="22" id="75k-Bk-dGV"/>
+                            <constraint firstItem="mkf-JQ-hVQ" firstAttribute="leading" secondItem="hr7-wu-f0v" secondAttribute="leading" type="default" id="A6D-CJ-rmq"/>
+                            <constraint firstAttribute="trailing" secondItem="u0b-7W-WfP" secondAttribute="trailing" constant="15" id="Axt-gF-sG0"/>
+                            <constraint firstItem="Yr1-2t-oJG" firstAttribute="baseline" secondItem="qmR-zq-GXa" secondAttribute="baseline" type="default" id="E1K-Bn-k9j"/>
+                            <constraint firstItem="u0b-7W-WfP" firstAttribute="top" secondItem="3" secondAttribute="top" constant="197" id="G3H-os-vsE"/>
+                            <constraint firstItem="ZHv-8k-ei8" firstAttribute="centerX" secondItem="mkf-JQ-hVQ" secondAttribute="centerX" type="default" id="Mut-Ji-Xy3"/>
+                            <constraint firstAttribute="bottom" secondItem="89d-mq-WMg" secondAttribute="bottom" constant="13" id="PF7-bz-inP"/>
+                            <constraint firstItem="Ivn-xL-kuj" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="123" id="S0D-px-IIJ"/>
+                            <constraint firstItem="mkf-JQ-hVQ" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="SwY-hc-vC3"/>
+                            <constraint firstAttribute="bottom" secondItem="ZHv-8k-ei8" secondAttribute="bottom" constant="35" id="UA6-1a-tAw"/>
+                            <constraint firstItem="FTF-oX-Pm2" firstAttribute="leading" secondItem="qmR-zq-GXa" secondAttribute="leading" type="default" id="UB9-5X-Lvy"/>
+                            <constraint firstAttribute="trailing" secondItem="Yr1-2t-oJG" secondAttribute="trailing" constant="28" id="Wqo-OC-ye7"/>
+                            <constraint firstItem="hr7-wu-f0v" firstAttribute="top" secondItem="3" secondAttribute="top" constant="9" id="ZHK-2e-iBR"/>
+                            <constraint firstAttribute="bottom" secondItem="mkf-JQ-hVQ" secondAttribute="bottom" constant="244" id="csd-V0-k6U"/>
+                            <constraint firstItem="FTF-oX-Pm2" firstAttribute="top" secondItem="3" secondAttribute="top" constant="161" id="r3a-wo-GeW"/>
+                            <constraint firstItem="ZHv-8k-ei8" firstAttribute="centerX" secondItem="89d-mq-WMg" secondAttribute="centerX" type="default" id="wBS-Wt-Hua"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AmPm" destination="u0b-7W-WfP" id="uz0-Wc-qOF"/>
+                        <outlet property="alarmTimeLabel" destination="Ivn-xL-kuj" id="NYp-nM-pCd"/>
+                        <outlet property="buttonClock" destination="Yr1-2t-oJG" id="odS-Bb-tOp"/>
+                        <outlet property="buttonTimer" destination="qmR-zq-GXa" id="7SX-2j-q59"/>
+                        <outlet property="currentLocation" destination="mkf-JQ-hVQ" id="Adg-i1-JuN"/>
+                        <outlet property="currentTime" destination="FTF-oX-Pm2" id="C75-0A-hzj"/>
+                        <outlet property="worldTimeLabel" destination="ZHv-8k-ei8" id="wib-Kh-pMO"/>
+                        <outlet property="worldTimeLocationLabel" destination="89d-mq-WMg" id="QZc-yA-cGk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="131"/>
+        </scene>
+        <!--World Clock View Controller-->
+        <scene sceneID="TJ3-b2-VQP">
+            <objects>
+                <viewController id="KwE-tY-aTz" customClass="WorldClockViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bbW-j6-41l">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbw-Fh-OuZ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2Rj-tp-t1J" kind="unwind" unwindAction="returned:" id="oRK-V2-zTf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhv-PY-XfM">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="New York">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoL-3e-T8e">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="England">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYn-3w-eov">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Australia">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kbw-Fh-OuZ" firstAttribute="top" secondItem="bbW-j6-41l" secondAttribute="top" constant="20" symbolic="YES" type="default" id="243-bx-uQh"/>
+                            <constraint firstItem="yhv-PY-XfM" firstAttribute="leading" secondItem="bbW-j6-41l" secondAttribute="leading" constant="118" id="Akc-mu-hMC"/>
+                            <constraint firstItem="kbw-Fh-OuZ" firstAttribute="leading" secondItem="bbW-j6-41l" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Q22-tw-S7z"/>
+                            <constraint firstItem="TYn-3w-eov" firstAttribute="centerX" secondItem="eoL-3e-T8e" secondAttribute="centerX" type="default" id="QO6-sC-GHP"/>
+                            <constraint firstItem="yhv-PY-XfM" firstAttribute="top" secondItem="bbW-j6-41l" secondAttribute="top" constant="103" id="S8K-v2-psm"/>
+                            <constraint firstItem="TYn-3w-eov" firstAttribute="top" secondItem="bbW-j6-41l" secondAttribute="top" constant="220" id="SMF-km-9MB"/>
+                            <constraint firstItem="eoL-3e-T8e" firstAttribute="centerX" secondItem="yhv-PY-XfM" secondAttribute="centerX" type="default" id="Sgg-np-zJh"/>
+                            <constraint firstItem="eoL-3e-T8e" firstAttribute="top" secondItem="bbW-j6-41l" secondAttribute="top" constant="164" id="Zpx-Ns-UA4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3UH-zZ-8KD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJj-ZY-TwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2Rj-tp-t1J" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="546" y="-404"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="AmPm" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="alarmTimeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="buttonClock" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonTimer" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="currentLocation" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="currentTime" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="worldTimeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="worldTimeLocationLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WorldClockViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WorldClockViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
