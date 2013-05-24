@@ -50,7 +50,6 @@
         
     checkTime = [NSTimer scheduledTimerWithTimeInterval: 1 target: self selector: @selector(setTime) userInfo: nil repeats: YES];
     
-    
 
     
     //NSLog(@"%@", [NSTimeZone knownTimeZoneNames]);
@@ -108,10 +107,9 @@
 //going to another viewcontroller
 -(IBAction)returned:(UIStoryboardSegue *)segue {
     checkTime = [NSTimer scheduledTimerWithTimeInterval: 1 target: self selector: @selector(setTime) userInfo: nil repeats: YES];
-    NSLog(@"%@", NSStringFromCGRect(alarmTimeLabel.frame));
-    self.wantsFullScreenLayout = YES;
-
-}
+    alarmTimeLabel.frame = CGRectMake(123, 0, 93, 21);
+    
+   }
 
 -(IBAction)buttonWorld:(id)sender{
     //this stops the nstimer ticking away to save battery and overall performance of the app
@@ -145,7 +143,6 @@
     
     if (x == 1) {
         [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
-        //the minus twenty is when the app goes full screen becuase of the
         CGRect endFrame = CGRectMake(123, 0, 93, 21);
         [UIView animateWithDuration:0.6 animations:^{ alarmTimeLabel.frame = endFrame;}];
         NSLog(@"Fullscreen!: Moving Objects....");
