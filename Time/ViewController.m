@@ -25,7 +25,11 @@
     [super viewDidLoad];
     [self setTime];
     
+<<<<<<< HEAD
     [self.view setBackgroundColor:[UIColor greenColor]]; //example code for changing background
+=======
+    [self.view setBackgroundColor:[UIColor brownColor]]; //example code for changing background
+>>>>>>> 7e9bca5597b41bdfb789a8290aa84d536865438e
     
     
     [currentLocation setFont:[UIFont fontWithName:@"Quicksand" size:26]];
