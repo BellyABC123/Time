@@ -139,7 +139,7 @@
 
 
 -(void)setFullscreen:(int)x{
-  
+
     
     if (x == 1) {
         [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
